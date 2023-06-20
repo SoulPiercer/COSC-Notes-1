@@ -1,0 +1,59 @@
+tuples are lists that cannot change; surrounded by parenthesis.
+
+>>> mylist = ['things', 'I', 'Want', 'to', 'list'
+... mylist = ['things', 'I', 'Want', 'to', 'list']
+  File "<stdin>", line 2
+    mylist = ['things', 'I', 'Want', 'to', 'list']
+         ^
+SyntaxError: invalid syntax
+>>> mylist = ['things', 'I', 'Want', 'to', 'list']
+>>> mylist
+['things', 'I', 'Want', 'to', 'list']
+>>> mylist[-1]
+'list'
+>>> list2 = ['new', 'list']
+>>> mylist.append(list2)
+>>> mylist[-2]
+'list'
+>>> mylist[-1]
+['new', 'list']
+>>> 
+
+Linux Machine
+ssh -X student@10.50.22.235
+
+terminator
+
+
+myVar = "Hello World"
+
+newVar = 24
+# int(newVar)
+
+print(myVar + str(newVar))
+
+# Every data type can be type casted using a function:
+""" 
+int() 
+bool()
+str()
+list()
+dict()
+set()
+float()
+tuple() 
+"""
+# Strings are immutable objects
+myVar = ["my", "list"]
+print(id(myVar))
+myVar.append("new stuff")
+print(myVar)
+print(id(myVar))
+
+# change the given list to keep the memory address the same
+
+
+myVar = ["Brand", "new", "list"]
+print(id(myVar))
+
+# to change the memory address of a list, create a new list. 
