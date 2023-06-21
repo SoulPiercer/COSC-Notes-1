@@ -1,8 +1,10 @@
 *****Learn how to do Markdown*****
 
-tuples are lists that cannot change; surrounded by parenthesis.
+TUPLES are lists that cannot change; surrounded by parenthesis.
+tupleExample = ('this', 'is', 'a', 'tuple')
 
->>> mylist = ['things', 'I', 'Want', 'to', 'list'
+
+mylist = ['things', 'I', 'Want', 'to', 'list'
 ... mylist = ['things', 'I', 'Want', 'to', 'list']
   File "<stdin>", line 2
     mylist = ['things', 'I', 'Want', 'to', 'list']
