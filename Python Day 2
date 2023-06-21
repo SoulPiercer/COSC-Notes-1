@@ -1,0 +1,57 @@
+Strings are iterable, can index each character
+  myStr[i]
+LIST METHOD:
+
+takes every character from a string and puts it in a list. 
+
+SPLIT METHOD:
+
+Makes a list of each individual word.
+  myStr.split()
+ 
+ 
+JOIN MEHTOD:
+
+  ' '.join(newStr) 
+will join the list with delimeter placed before the period. (in this case, the delimeter is white space) 
+
+
+STRING / LIST SLICING
+sudo cat /etc/shadow
+>>> shadow_user = 'student:$6$kkUnWh2v$IMjH5E98NEYAWtvS1joiI6v6ErxnMQbukUR3d/fjz1xvXEqkVuMmCTLBU2wyq2OaZQaKfp1YOl.gh/8/a5FAO.:19529:0:99999:7:::'
+
+
+>>> ':'.join(shadow_user.split(':')[0:2])
+'student:$6$kkUnWh2v$IMjH5E98NEYAWtvS1joiI6v6ErxnMQbukUR3d/fjz1xvXEqkVuMmCTLBU2wyq2OaZQaKfp1YOl.gh/8/a5FAO.'
+
+F STRINGS
+
+>>> name = 'Riesmeyer'
+>>> rank = 'LCPL'
+>>> mod = 'Python'
+>>> 
+>>> f'Hello {rank} {name}, you will be teaching {mod} today.'
+'Hello LCPL Riesmeyer, you will be teaching Python today.'
+
+### place f infront of string or... 
+### .format(rank,name,mod) after string
+
+  1 name = input("What is your name?: ")
+  2 quest = input("What is your quest?: ")
+  3 color = input("What is your favorite color?: ")
+  4 
+  5 print(f'You are {name}, your quest is {quest} and your favorite color is {color}.')
+  6 
+
+
+SPLITING WITH DIFFERENT DELIMETERS:
+
+>>> email = 'chesty.puller@usmc.mil'
+>>> atted = email.split('@')
+>>> atted
+['chesty.puller', 'usmc.mil']
+>>> '.'.join(atted)
+'chesty.puller.usmc.mil'
+>>> joined = '.'.join(atted)
+>>> joined.split('.')
+['chesty', 'puller', 'usmc', 'mil']
